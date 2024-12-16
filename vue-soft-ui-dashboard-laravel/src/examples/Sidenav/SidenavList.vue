@@ -110,26 +110,9 @@
       </li>
     </ul>
   </div>
-  <div class="pt-3 mx-3 mt-3 sidenav-footer">
-    <sidenav-card
-      :class="cardBg"
-      textPrimary="Need Help?"
-      textSecondary="Please check our docs"
-      route="https://vue-soft-ui-dashboard-laravel-docs.creative-tim.com/vue/overview/soft-ui-dashboard"
-      label="Documentation"
-      icon="ni ni-diamond"
-    />
-    <a
-      class="btn bg-gradient-success mt-4 w-100"
-      href="https://www.creative-tim.com/product/vue-soft-ui-dashboard-laravel-pro?ref=vsud"
-      type="button"
-      >Upgrade to pro</a
-    >
-  </div>
 </template>
 <script>
 import SidenavCollapse from "./SidenavCollapse.vue";
-import SidenavCard from "./SidenavCard.vue";
 import Shop from "../../components/Icon/Shop.vue";
 import Office from "../../components/Icon/Office.vue";
 import CreditCard from "../../components/Icon/CreditCard.vue";
@@ -154,7 +137,7 @@ export default {
   },
   components: {
     SidenavCollapse,
-    SidenavCard,
+    
     Shop,
     Office,
     CreditCard,
