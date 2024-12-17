@@ -5,7 +5,9 @@ const API_URL = process.env.VUE_APP_API_BASE_URL + '/';
 
 export default {
   async login(user) {
+    console.log(API_URL + "login", user);
     const response = await axios.post(API_URL + "login", user);
+    console.log(response)
     if (response.data.access_token) {
       localStorage.setItem("userF", JSON.stringify(response.data.access_token));
     }

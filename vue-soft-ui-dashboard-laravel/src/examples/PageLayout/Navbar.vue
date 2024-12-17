@@ -11,7 +11,7 @@
         v-bind="$attrs"
         :class="isBlur ? 'text-dark' : 'text-white'"
       >
-        Soft UI Dashboard
+        Cozy Fox UI
       </router-link>
       <button
         class="navbar-toggler shadow-none ms-2"

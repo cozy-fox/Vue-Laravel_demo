@@ -56,6 +56,13 @@
         </sidenav-collapse>
       </li>
       <li class="nav-item">
+        <sidenav-collapse navText="To-do" :to="{ name: 'To-do' }">
+          <template #icon>
+            <box3d />
+          </template>
+        </sidenav-collapse>
+      </li>
+      <li class="nav-item">
         <sidenav-collapse navText="Tables" :to="{ name: 'Tables' }">
           <template #icon>
             <office />
@@ -66,24 +73,6 @@
         <sidenav-collapse navText="Billing" :to="{ name: 'Billing' }">
           <template #icon>
             <credit-card />
-          </template>
-        </sidenav-collapse>
-      </li>
-
-      <li class="nav-item">
-        <sidenav-collapse
-          navText="Virtual Reality"
-          :to="{ name: 'Virtual Reality' }"
-        >
-          <template #icon>
-            <box3d />
-          </template>
-        </sidenav-collapse>
-      </li>
-      <li class="nav-item">
-        <sidenav-collapse navText="RTL" :to="{ name: 'Rtl' }">
-          <template #icon>
-            <settings />
           </template>
         </sidenav-collapse>
       </li>
@@ -121,7 +110,7 @@ import CustomerSupport from "../../components/Icon/CustomerSupport.vue";
 import Switches from "../../components/Icon/Switches.vue";
 import Document from "../../components/Icon/Document.vue";
 import Spaceship from "../../components/Icon/Spaceship.vue";
-import Settings from "../../components/Icon/Settings.vue";
+// import Settings from "../../components/Icon/Settings.vue";
 
 export default {
   name: "SidenavList",
@@ -130,7 +119,7 @@ export default {
   },
   data() {
     return {
-      title: "Soft UI Dashboard PRO",
+      title: "Cozy Fox Dashboard PRO",
       controls: "dashboardsExamples",
       isActive: "active",
     };
@@ -146,7 +135,7 @@ export default {
     Switches,
     Document,
     Spaceship,
-    Settings,
+    // Settings,
   },
   methods: {
     getRoute() {
