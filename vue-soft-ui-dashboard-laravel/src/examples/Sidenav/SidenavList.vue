@@ -83,7 +83,7 @@
           </template>
         </sidenav-collapse>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <sidenav-collapse navText="Sign In" :to="{ name: 'Sign In' }">
           <template #icon>
             <document />
@@ -96,7 +96,7 @@
             <spaceship />
           </template>
         </sidenav-collapse>
-      </li>
+      </li> -->
     </ul>
   </div>
 </template>
@@ -108,8 +108,8 @@ import CreditCard from "../../components/Icon/CreditCard.vue";
 import Box3d from "../../components/Icon/Box3d.vue";
 import CustomerSupport from "../../components/Icon/CustomerSupport.vue";
 import Switches from "../../components/Icon/Switches.vue";
-import Document from "../../components/Icon/Document.vue";
-import Spaceship from "../../components/Icon/Spaceship.vue";
+// import Document from "../../components/Icon/Document.vue";
+// import Spaceship from "../../components/Icon/Spaceship.vue";
 // import Settings from "../../components/Icon/Settings.vue";
 
 export default {
@@ -133,8 +133,8 @@ export default {
     Box3d,
     CustomerSupport,
     Switches,
-    Document,
-    Spaceship,
+    // Document,
+    // Spaceship,
     // Settings,
   },
   methods: {

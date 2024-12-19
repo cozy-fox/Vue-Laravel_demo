@@ -1,8 +1,8 @@
-export default function guest({ next }) {
-  // if (store.getters["auth/loggedIn"]) {
-  //   return next({
-  //     name: "Profile",
-  //   });
-  // }
+export default function guest({ next, store }) {
+  if (store.getters["auth/loggedIn"]) {
+    return next({
+      name: "Profile",
+    });
+  }
   next();
 }

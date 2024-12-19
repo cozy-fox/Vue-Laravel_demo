@@ -137,7 +137,6 @@ export default {
     async handleLogin() {
       this.loading = true;
       try {
-        console.log('this.user', this.user)
         await this.$store.dispatch("auth/login", this.user);
         this.$router.push("/dashboard");
       } catch (error) {

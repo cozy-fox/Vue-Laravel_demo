@@ -7,6 +7,7 @@ const API_URL = process.env.VUE_APP_API_BASE_URL + '/';
 
 export default {
   async getProfile() {
+    // console.log( 'moron')
     const response = await axios.get(API_URL + "me", {
       headers: authHeader(),
     });
